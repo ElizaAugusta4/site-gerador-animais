@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerador de Animais</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(119, 213, 229);
+    }
+    .title {
+      font-size: 24px;
+      margin-top: 20px;
+      background-color: aliceblue;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .footer {
+      width: 100%;
+      background-color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .animal-image {
+    width: 300px; /* Aumentando a largura */
+    height: 300px; /* Aumentando a altura */
+    margin: 20px;
+    border-radius: 50%;
+    object-fit: cover; /* Manter proporções */
+    }
+  </style>
+</head>
+<body>
+  <div class="title">Gerador de Animais</div>
+
+  <div class="menu">
+    <label for="animalSelect">Escolha um animal:</label>
+    <select id="animalSelect">
+        <option value="dog">Cachorro</option>
+        <option value="parrot">Papagaio</option>
+        <option value="cat">Gato</option>
+        <option value="pig">Porco</option>
+        <option value="elephant">Elefante</option>
+        <option value="tiger">Tigre</option>
+        <option value="lion">Leão</option>
+        <option value="panda">Panda</option>
+        <option value="koala">Koala</option>
+        <option value="horse">Cavalo</option>
+        <option value="monkey">Macaco</option>
+        <option value="bear">Urso</option>
+        <option value="zebra">Zebra</option>
+        <option value="dolphin"> Golfinho</option>
+    </select>
+
+    <button onclick="createAnimal()">Gerar Animal</button>
+  </div>
+
+  <div id="animalContainer"></div>
+
+  <div class="footer">
+    By Eliza Augusta de Carvalho Neta <3
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
